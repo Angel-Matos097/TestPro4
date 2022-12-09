@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="assets/estilos/desktopProductos.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="estilo_movil.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/2ee0245f3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="wow.min.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+    <script src="fancybox/jquery.fancybox.js"></script>
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <script>
+      new WOW().init();
+    </script>
+
+    <a class="btnWhats" href="https://wa.me/529994917701"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+    <div id="sube" class="btnRegresar">
+      <i class="fa-solid fa-square-caret-up"></i>
+      <h1></h1>
+    </div>
+
+    <header class="ancho">
+      <figure>
+        <img src="assets/imagenes/logo.svg" alt="" />
+      </figure>
+
+      <div class="menu">
+        <a href="#" id="iconomenu" class="menubar"> <i class="fa-solid fa-bars"></i> </a>
+        <nav class="ancho">
+          <a class="Inicio" href="https://angel-matos097.github.io/TestPro4/index.html">Inicio</a>
+          <a class="Productos" href="https://angel-matos097.github.io/TestPro4/productos.html">Productos</a>
+          <a class="Sobre" href="https://angel-matos097.github.io/TestPro4/sobrenosotros.html">Nosotros</a>
+          <a href="#modal" class="Contacto">Contactanos</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="contenedormatriz">
+      <h3> ¡Contamos con la mejor calidad!</h3>
+      <section class="matrizproductos ancho">
+        <article
+          class="div1 wow animate__animated animate__fadeInLeft"
+          data-wow-delay=".3s"
+        >
+          <figure>
+            <img src="assets/imagenes/angulosacero2.jpg" alt="" />
+          </figure>
+          <div class="textoparaproductos">
+            <span id="prueba" class="izquierda"></span>
+            <h2>Angulos de acero.</h2>
+            <span class="derecha"></span>
+          </div>
+        </article>
+        <article
+          class="div2 wow animate__animated animate__fadeInRight"
+          data-wow-delay=".6s"
+        >
+          <figure>
+            <img src="assets/imagenes/placademetal2.jpg" alt="" />
+          </figure>
+          <div class="textoparaproductos">
+            <span class="izquierda"></span>
+            <h2>Placas de metal.</h2>
+            <span class="derecha"></span>
+          </div>
+        </article>
+        <article
+          class="div3 wow animate__animated animate__fadeInTopRight"
+          data-wow-delay=".9s"
+        >
+          <figure>
+            <img src="assets/imagenes/segundostubulares.jpeg" alt="" />
+          </figure>
+          <div class="textoparaproductos">
+            <span class="izquierda"></span>
+            <h2>Tubulares reforzados.</h2>
+            <span class="derecha"></span>
+          </div>
+        </article>
+        <article
+          class="div4 wow animate__animated animate__fadeInBottomLeft desaparecearticle"
+          data-wow-delay="1.2"
+        >
+          <figure>
+            <img src="assets/imagenes/barrametal.jpeg" alt="" />
+          </figure>
+          <div class="textoparaproductos">
+            <span class="izquierda"></span>
+            <h2>Barras de acero reforzado calidad G8.</h2>
+            <span class="derecha"></span>
+          </div>
+        </article>
+        <article
+          class="div5 wow animate__animated animate__fadeIn desaparecearticle"
+          data-wow-duration="1.3s"
+          data-wow-delay="2s"
+        >
+          <figure>
+            <img src="assets/imagenes/segundascabillas.jpg" alt="" />
+          </figure>
+          <div class="textoparaproductos">
+            <span class="izquierda"></span>
+            <h2>Cabillas de acero.</h2>
+            <span class="derecha"></span>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <section class="Seccion4 ancho">
+      <!--ENCABEZADOS-->
+      <h2>Nuestra lista completa de productos</h2>
+
+      <div class="datos ancho">
+        <article
+          class="wow animate__animated animate__fadeInLeft"
+          data-wow-delay=".5s"
+        >
+          <div class="titulos">
+            <i class="fa-solid fa-check-to-slot"></i>            <h3>Fibras Deacero.</h3>
+          </div>
+          <p>
+            Son filamentos de acero de alta resistencia con dobleces en sus extremos, fabricadas con alambre de bajo carbón estirado en frío se utilizan como acero de refuerzo en estructuras de concreto.
+          </p>
+          <div class="titulos">
+            <i class="fa-solid fa-check-to-slot"></i>            <h3>Torón de Presfuerzo.</h3>
+          </div>
+          <p>
+            Está fabricado con alambres de acero entorchados entre sí, y que permiten la construcción de estructuras con dimensiones superiores a las hechas con acero de refuerzo tradicional.
+          </p>
+          <div class="titulos">
+            <i class="fa-solid fa-check-to-slot"></i>            <h3>Gavión Galvanizado.</h3>
+          </div>
+          <p>
+            Es una caja prismática en forma rectangular fabricada con malla metálica de triple torsión de alambre galvanizado, que se llena con piedras y tiene la función de dar estabilidad a un terreno.
+          </p>
+          <div class="titulos">
+            <i class="fa-solid fa-check-to-slot"></i>            <h3>Varilla Grado 42 </h3>
+          </div>
+          <p>
+            Barra de acero corrugado adaptable a diversas estructuras de refuerzo de concreto disponible en diversos diámetros según especificaciones de obra.
+          </p>
+          <div class="titulos">
+            <i class="fa-solid fa-check-to-slot"></i>            <h3>Castillo Doblado</h3>
+          </div>
+          <p>
+            Los castillos son estructuras electrosoldadas que se fabrican con varillas longitudinales corrugadas grado 60 y por estribos lisos grado 50, todos laminados en frío.
+          </p>
+        </article>
+        <article
+          class="wow animate__animated animate__fadeInRight"
+          data-wow-delay=".5s"
+        >
+          <div class="titulos">
+            <i class="fa-solid fa-check-to-slot"></i>            <h3>Ángulos Comerciales</h3>
+          </div>
+          <p>
+            Figura angular de acero con lados iguales o desiguales adaptable a diversos usos en función de su espesor y propiedades mecánicas.
+          </p>
+          <div class="titulos">
+            <i class="fa-solid fa-check-to-slot"></i>            <h3>Cuadrados Comerciales. </h3>
+          </div>
+          <p>
+            Barra de acero cuadrada y lisa que sirve como componente para distintos usos en una infinidad de industrias y maquinarias.
+          </p>
+          <div class="titulos">
+            <i class="fa-solid fa-check-to-slot"></i>            <h3>Canales Estructurales</h3>
+          </div>
+          <p>
+            Figura acanalada hecha en acero para necesidades industriales y de la construcción donde las propiedades mecánicas sean críticas para un buen desempeño.
+          </p>
+          <div class="titulos">
+            <i class="fa-solid fa-check-to-slot"></i>            <h3>Alambrón para Construcción</h3>
+          </div>
+          <p>
+            Alambrón de acero al carbón y sin tratamiento que se utiliza en la industria de la construcción para formar figuras de acero de refuerzo.
+          </p>
+          <div class="titulos">
+            <i class="fa-solid fa-check-to-slot"></i>            <h3>Malla Soldada 88 y 1010 </h3>
+          </div>
+          <p>
+            Malla cuadricular soldada en sus puntos de cruce que ejerce como acero de refuerzo para concreto sustituyendo a las varillas tradicionales grado 42.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------- -->
+    <div id="modal" class="fondoformulario">
+      <section class="contenidomodal">
+        <div class="formulario">
+          <h1>CONTACTANOS</h1>
+          <br />
+          <p>
+            Escribenos para descrbir tus necesidades, nos pondremos en contacto
+            contigo para agendar una cita de negocios.
+          </p>
+          <br />
+          <form action="">
+            <input
+              type="name"
+              name="Nombre"
+              class="nombre"
+              id="user-email"
+              placeholder="Empresa *"
+              required
+            />
+            <br /><br />
+            <input
+              type="email"
+              name="Email"
+              class="email"
+              id="user-email"
+              placeholder="Correo *"
+              required
+            />
+            <br /><br />
+            <textarea
+              class="mensaje"
+              name="message"
+              cols="40"
+              rows="6"
+              placeholder="Describe tu caso *"
+              required
+              minlength="80"
+            ></textarea>
+            <br /><br />
+            <input class="boton" type="submit" value="Enviar" />
+          </form>
+        </div>
+        <figure>
+          <img src="assets/imagenes/logo.svg" alt="" />
+        </figure>
+      </section>
+    </div>
+
+    <footer>
+      <div>
+        
+      </div>
+      <a href="#"> Acerca de nosotros </a>
+      <ul>
+        <li>
+          <a href="#"> <i class="fa-brands fa-square-facebook"></i> </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-brands fa-square-twitter"></i> </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-brands fa-square-instagram"></i> </a>
+        </li>
+      </ul>
+
+      <h3>
+        Contacto: LE18081099@merida.tecnm.mx
+      </h3>
+      <p>Create and design by: Ángel Matos</p>
+    </footer>
+
+    <script src="funciones.js"></script>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#slider1").tinycarousel();
+    });
+  </script>
+</html>

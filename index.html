@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="assets/estilos/desktopInicio.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="estilo_movil.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/2ee0245f3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="wow.min.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+    <script src="fancybox/jquery.fancybox.js"></script>
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: true,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <script>
+      new WOW().init();
+    </script>
+
+    <a class="btnWhats" href="https://wa.me/529994917701"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+
+    <header class="ancho">
+      <figure>
+        <img src="assets/imagenes/logo.svg" alt="" />
+      </figure>
+
+      <div class="menu">
+        <a href="#" id="iconomenu" class="menubar"> <i class="fa-solid fa-bars"></i> </a>
+
+        <nav class="ancho">
+          <a class="Inicio" href="https://angel-matos097.github.io/TestPro4/index.html">Inicio</a>
+          <a class="Productos" href="https://angel-matos097.github.io/TestPro4/productos.html">Productos</a>
+          <a class="Sobre" href="https://angel-matos097.github.io/TestPro4/sobrenosotros.html">Nosotros</a>
+          <a id="form" class="Contacto" href="#">Contacto</a>
+        </nav>
+      </div>
+      
+    </header>
+
+    <section class="slideflechas">
+      <div class="callbacks_container">
+        <i class="fa-solid fa-chevron-right slide_derecha"></i>
+        <i class="fa-solid fa-chevron-left slide_izquierda"></i>
+        <ul class="rslides" id="slider4">
+          <li>
+            <img src="assets/imagenes/slide1.jpg" alt="" />
+            <article
+              class="caption wow animate__animated animate__fadeInLeftBig"
+            >
+              <h1
+                class="wow animate__animated animate__backInRight"
+                data-wow-delay=".8s"
+              >
+                Somos el principal <br />
+                distribuidor a nivel <br />
+                nacional en materiales de metalurgia.
+              </h1>
+              <p
+                class="wow animate__animated animate__backInRight"
+                data-wow-delay="1.4s"
+              >
+                Con 3 certificaciones en calidad y manejo de productos y más de
+                100 clientes somos el estandar en calidad.
+              </p>
+              <a
+                class="wow animate__animated animate__backInLeft"
+                data-wow-delay="1.8s"
+                href="/sobrenosotros.html"
+              >
+                <span class="Sabermas">Saber más...</span>
+                <span class="Conocetodo">Conoce todo sobre nosotros.</span></a
+              >
+            </article>
+          </li>
+
+          <li>
+            <img src="assets/imagenes/slide2.jpg" alt="" />
+            <article class="caption segundoslide">
+              <h1>Contamos con:</h1>
+              <div class="contenedordivs">
+                <div>
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <h2>30 años de experiencia.</h2>
+                </div>
+                <div>
+                  <i class="fa-solid fa-list-check"></i>
+                  <h2>Más de 1,000,000 de toneladas de productos vendidos.</h2>
+                </div>
+                <div class="sequita">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <h2>43 sucursales a lo largo de todo el país.</h2>
+                </div>
+                <div class="sequita">
+                  <i class="fa-solid fa-truck-ramp-box"></i>
+                  <h2>3 certificaciones de calidad en procesos de traslado.</h2>
+                </div>
+                <a href="#">
+                  <span class="Sabermas">Saber más...</span>
+                  <span class="Conocetodo">Conoce todo sobre nosotros.</span></a
+                >
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <img src="assets/imagenes/slide3.jpg" alt="" />
+            <article class="caption">
+              <h1>
+                Una gran variedad <br />
+                de productos para <br />
+                <span style="color: var(--secundario)">cualquier</span> proyecto y
+                <span style="color: var(--secundario)">presupuesto</span>.
+              </h1>
+              <p>
+                Contamos con asesores capacitados para adaptarse a las
+                necesidades de tu empresa.
+              </p>
+              <a href="#">
+                <span class="Sabermas">Saber más...</span>
+                <span class="Conocetodo">Conoce todo sobre nosotros.</span></a
+              >
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ancho seccion1">
+      <h1>Materiales para cualquier proyecto.</h1>
+      <div class="grande">
+        <div class="pequenio">
+          <div class="arriba">
+            <article class="articlepequenio arriba">
+              <figure>
+                <img src="assets/imagenes/proyectos1.jpg" alt="" />
+              </figure>
+
+              <div class="textoparaproductos">
+                <span id="prueba" class="izquierda"></span>
+                <h2>Estructuras de soporte.</h2>
+                <span class="derecha"></span>
+              </div>
+            </article>
+            <article class="articlepequenio arriba">
+              <figure>
+                <img src="assets/imagenes/proyecto2.jpg" alt="" />
+              </figure>
+
+              <div class="textoparaproductos">
+                <span class="izquierda"></span>
+                <h2>Diseño arquitectonico.</h2>
+                <span class="derecha"></span>
+              </div>
+            </article>
+          </div>
+
+          <div class="abajo">
+            <article class="articlepequenio">
+              <figure>
+                <img src="assets/imagenes/proyectos3.jpg" alt="" />
+              </figure>
+
+              <div class="textoparaproductos">
+                <span class="izquierda"></span>
+                <h2>Diseño alternativo.</h2>
+                <span class="derecha"></span>
+              </div>
+            </article>
+            <article class="articlepequenio">
+              <figure>
+                <img src="assets/imagenes/proyectos4.jpg" alt="" />
+              </figure>
+
+              <div class="textoparaproductos">
+                <span class="izquierda"></span>
+                <h2>Construcción clásica.</h2>
+                <span class="derecha"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="articlelargo">
+          <article class="largo">
+            <figure>
+              <img src="assets/imagenes/proyectos5.jpg" alt="" />
+            </figure>
+
+            <div class="textoparaproductos">
+              <span class="izquierda"></span>
+              <h2 style="font-size: 23px; line-height: 25px;">Sistemas de tuberias.</h2>
+              <span class="derecha"></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion2">
+      <h1>Tu proveedor de confianza para la compra de material metalurgico.</h1>
+      <p>
+        Negociamos y nos ajustamos presupuestos para proyectos pequeños,
+        medianos y grandes, siempre buscando la calidad y durabilidad en
+        nuestros materiales desde 1992.
+      </p>
+      <div class="botones">
+        <a id="form2" class="Contacto" href="#">Contactanos</a>
+        <a href="/productos.html"> Nuestros productos </a>
+      </div>
+    </section>
+
+    <section class="Seccion4">
+      <!--ENCABEZADOS-->
+      <h2>¿Cómo trabajamos?</h2>
+
+      <div class="datos ancho">
+        <article
+          class="wow animate__animated animate__backInLeft"
+          data-wow-delay=".8s"
+        >
+          <figure>
+            <img src="assets/imagenes/profesional.jpg" alt="" />
+          </figure>
+          <h3>Negociamos con profesionales verificados.</h3>
+          <p>
+            Con el tiempo, hemos construido una comunidad de multiples
+            proveedores para satisfacer todas las necesdades del mercado.
+          </p>
+          <a href="/sobrenosotros.html"> Conocer más </a>
+        </article>
+        <article
+          class="wow animate__animated animate__backInLeft"
+          data-wow-delay=".4s"
+        >
+          <figure>
+            <img src="assets/imagenes/verificar.jpg" alt="" />
+          </figure>
+          <h3>Verificación de materiales en origen.</h3>
+          <p>
+            En el momento de la carga del material, verificamos que la mercancía
+            corresponde con lo que has acordado en la negociación.
+          </p>
+          <a href="/sobrenosotros.html"> Conocer más </a>
+        </article>
+        <article
+          class="wow animate__animated animate__backInRight"
+          data-wow-delay=".4s"
+        >
+          <figure>
+            <img src="assets/imagenes/transporte.jpg" alt="" />
+          </figure>
+          <h3>Transporte puerta a puerta.</h3>
+          <p>
+            Gestionamos la logística: enviamos el material desde las instalaciones y lo entregamos en las del comprador con rastreo GPS en todo el camino.
+          </p>
+          <a href="/sobrenosotros.html"> Conocer más </a>
+        </article>
+        <article
+          class="wow animate__animated animate__backInRight"
+          data-wow-delay=".8s"
+        >
+          <figure>
+            <img src="assets/imagenes/depositos.jpg" alt="" />
+          </figure>
+          <h3>Depósitos y pagos seguros.</h3>
+          <p>
+            Las transacciones se realizan con total seguridad a través de
+            nuestra, garantizando tu dinero gracias a nuestro partner financiero.
+          </p>
+          <a href="/sobrenosotros.html"> Conocer más </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="galeria" class="ancho">
+      <div class="parteizquierda">
+        <h1>NUESTRAS INSTALACIONES</h1>
+        <div class="fotoszquierda">
+          <a
+            href="assets/imagenes/instalaciones2.jpg"
+            class="fancybox fotochica"
+            title="Excelente ubicación."
+            rel="gallery1"
+          >
+            <img src="assets/imagenes/instalaciones2.jpg" alt="" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a
+            href="assets/imagenes/instalaciones4.jpg"
+            class="fancybox fotochica"
+            title="Verificaciones constantes de calidad."
+            rel="gallery1"
+          >
+            <img src="assets/imagenes/instalaciones4.jpg" alt="" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a
+            href="assets/imagenes/instalaciones3.jpg"
+            class="fancybox fotochica"
+            title="Surtido extenso."
+            rel="gallery1"
+          >
+            <img src="assets/imagenes/instalaciones3.jpg" alt="" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+      </div>
+      <a
+        href="assets/imagenes/instalaciones1.jpg"
+        class="fancybox fotogrande"
+        title="Grandes bodegas."
+        rel="gallery1"
+      >
+        <img src="assets/imagenes/instalaciones1.jpg" alt="" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+    </section>
+
+    <div id="modal" class="fondoformulario">
+      <a id="cerrar" href="#">
+        <i class="fa-sharp fa-solid fa-rectangle-xmark"></i>
+      </a>
+      <section class="contenidomodal">
+        <div class="formulario">
+          <h1>CONTACTANOS</h1>
+          <br />
+          <p>
+            Escribenos para descrbir tus necesidades, nos pondremos en contacto
+            contigo para agendar una cita de negocios.
+          </p>
+          <br />
+          <form action="">
+            <input
+              type="name"
+              name="Nombre"
+              class="nombre"
+              id="user-email"
+              placeholder="Empresa *"
+              required
+            />
+            <br /><br />
+            <input
+              type="email"
+              name="Email"
+              class="email"
+              id="user-email"
+              placeholder="Correo *"
+              required
+            />
+            <br /><br />
+            <textarea
+              class="mensaje"
+              name="message"
+              cols="40"
+              rows="6"
+              placeholder="Describe tu caso *"
+              required
+              minlength="80"
+            ></textarea>
+            <br /><br />
+            <input class="boton" type="submit" value="Enviar" />
+          </form>
+        </div>
+        <figure>
+          <img src="assets/imagenes/logo.svg" alt="" />
+        </figure>
+      </section>
+    </div>
+
+    <footer>
+      <figure>
+        <img src="assets/imagenes/logo.svg" alt="" />
+      </figure>
+      <a href="/sobrenosotros.html"> Acerca de nosotros </a>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/"> <i class="fa-brands fa-square-facebook"></i> </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/"> <i class="fa-brands fa-square-twitter"></i> </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/"> <i class="fa-brands fa-square-instagram"></i> </a>
+        </li>
+      </ul>
+      <h3>
+        Contacto:<br />
+        LE18081099@merida.tecnm.mx
+      </h3>
+      <p>Create and design by: Ángel Matos</p>
+    </footer>
+
+    <div id="sube" class="btnRegresar">
+      <i class="fa-solid fa-square-caret-up"></i>
+      <h1></h1>
+    </div>
+
+    <script>
+      var fondomodal = document.getElementById("modal");
+      var btn = document.getElementById("form");
+      var cerrar = document.getElementById("cerrar");
+
+      function tiempo() {
+        fondomodal.style.display = "block";
+      }
+      setTimeout(tiempo, 2000000);
+
+      btn.onclick = function () {
+        fondomodal.style.display = "block";
+      };
+      cerrar.onclick = function () {
+        fondomodal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == fondomodal) {
+          fondomodal.style.display = "none";
+        }
+      };
+    </script>
+
+<script>
+  var fondomodal = document.getElementById("modal");
+  var btn = document.getElementById("form2");
+  var cerrar = document.getElementById("cerrar");
+
+  btn.onclick = function () {
+    fondomodal.style.display = "block";
+  };
+  cerrar.onclick = function () {
+    fondomodal.style.display = "none";
+  };
+  window.onclick = function (event) {
+    if (event.target == fondomodal) {
+      fondomodal.style.display = "none";
+    }
+  };
+</script>
+
+    <script src="funciones.js"></script>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#slider1").tinycarousel();
+    });
+  </script>
+</html>

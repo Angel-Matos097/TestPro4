@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="assets/estilos/desktopNosotros.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/estilos/tinycarousel.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="jquery.tinycarousel.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2ee0245f3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="responsiveslides.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="wow.min.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+    <script src="fancybox/jquery.fancybox.js"></script>
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <script>
+      new WOW().init();
+    </script>
+
+    <a class="btnWhats" href="https://wa.me/529994917701"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+
+    <header class="ancho">
+      <figure>
+        <img src="assets/imagenes/logo.svg" alt="" />
+      </figure>
+
+      <div class="menu">
+        <a href="#" id="iconomenu" class="menubar"> <i class="fa-solid fa-bars"></i> </a>
+
+        <nav class="ancho">
+          <a class="Inicio" href="https://angel-matos097.github.io/TestPro4/index.html">Inicio</a>
+          <a class="Productos" href="https://angel-matos097.github.io/TestPro4/productos.html">Productos</a>
+          <a class="Sobre" href="https://angel-matos097.github.io/TestPro4/sobrenosotros.html">Nosotros</a>
+          <a id="form" class="Contacto" href="#">Contacto</a>
+        </nav>
+      </div>
+      
+    </header>
+
+    <section class="reconocimientos">
+      <h1>Nuestras Certificacionies</h1>
+      <div>
+        <figure
+          class="wow animate__animated animate__backInLeft"
+          data-wow-delay=".8s"
+        >
+          <img src="assets/imagenes/certificacion1.jpeg" alt="" />
+        </figure>
+        <figure
+          class="wow animate__animated animate__fadeIn"
+          data-wow-delay=".3s"
+        >
+          <img src="assets/imagenes/certificacion2.jpeg" alt="" />
+        </figure>
+        <figure
+          class="wow animate__animated animate__backInRight"
+          data-wow-delay=".8s"
+        >
+          <img src="assets/imagenes/certificacion3.jpeg" alt="" />
+        </figure>
+      </div>
+    </section>
+
+     <!-- CARROUSEL -->
+     <div class="fondocarrousel">
+      <section id="slider1" class="ancho">
+        <div class="botones">
+          <h1 class="noticiasMovil">NOTICIAS</h1>
+          <div>
+            <a class="buttons prev" href="#">
+              <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <h1 class="noticiasDesktop">NOTICIAS</h1>
+            <a class="buttons next" href="#">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="viewport">
+          <ul class="overview">
+            <li class="impar">
+              <img src="assets/imagenes/noticias/restauraciontorre.jpg" />
+              <div>
+                <h3>Restauran la Torre Eiffel.</h3>
+                <p>
+Se reestructuran las zonas de peligro en la mayor atracción de metal del mundo.
+                </p>
+                <a href="#" class="btn_rojo">Ver más</a>
+              </div>
+            </li>
+            <li class="par">
+              <img src="assets/imagenes/noticias/industrametalurgica.jpg" />
+              <div>
+                <h3>La industria del acero se encuentra a la alza.</h3>
+                <p>
+La bolsa de valores promete nuevas inversiones y un futuro prometedor para el mercado.
+                </p>
+                <a href="#" class="btn_rojo">Ver más</a>
+              </div>
+            </li>
+            <li class="impar">
+              <img src="assets/imagenes/noticias/industraminera.jpg" />
+              <div>
+                <h3>Nuevo método para la extracción de material.</h3>
+                <p>
+Promete reducir el impacto en la contaminación del subsuelo y mejorar las condiciones laborales.
+                </p>
+                <a href="#" class="btn_rojo">Ver más</a>
+              </div>
+            </li>
+            <li class="par">
+              <img src="assets/imagenes/noticias/procesosfabricacioin.jpeg" />
+              <div>
+                <h3>Mejoran la produccion de insumos de construcción.</h3>
+                <p>
+Las nuevas fábricas prometen optmizar los medios de producción al igual que abaratar costos.
+                </p>
+                <a href="#" class="btn_rojo">Ver más</a>
+              </div>
+            </li>
+            <li class="impar">
+              <img src="assets/imagenes/noticias/blackfriday.jpg" />
+              <div>
+                <h3>Se avecina la ola de descuentos.</h3>
+                <p>
+Se aproxima el Black Friday, por lo que tendremos descuentos en todos nuestros productos de importación americana.
+                </p>
+                <a href="#" class="btn_rojo">Ver más</a>
+              </div>
+            </li>
+            <li class="par">
+              <img src="assets/imagenes/noticias/mexicofuerademundial.jpg" />
+              <div>
+                <h3>¡Fuera!</h3>
+                <p>
+Luego de una lamentable actuación en el mundial, México se despide sin siquera clasificar a octavos, se sospecha que la culpa es de Televisa.
+                </p>
+                <a href="#" class="btn_rojo">Ver más</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- CARROUSEL -->
+
+
+    <section class="videoniformatico ancho">
+      <h1>Nuestra <br> Filosofia</h1>
+      <article class="video">
+        <div id="contenedoryoutube">
+          <iframe
+            src="https://www.youtube.com/embed/1R4QDmDFM4c"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </article>
+    </section>
+
+
+
+
+    <div class="encabezadopreguntas">
+      <h1>Preguntas frecuentes</h1>
+      <p>Conoce la información más consultada por nuestros clientes.</p>
+    </div>
+
+    <section class="preguntasfrecuentes acordeontarea ancho">
+      <article>
+        <div class="preguntasfrecuentes">
+          <div class="acordeon">
+            <div class="acordeon_titulo titulo1">
+              <div class="iconos">
+                <i class="fa-solid fa-plus mas1"></i>
+                <i class="fa-solid fa-minus menos1"></i>
+              </div>
+              <h2>¿Cuentan con garantía?</h2>
+            </div>
+            <p class="acordeon_contenido contenido1">
+              Desde luego, manejamos toda clase de contratos sobre los que se
+              establecen todas las pautas y requerimentos que nos permtan
+              cumplir con sus expectativas.
+            </p>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon_titulo titulo2">
+              <div class="iconos">
+                <i class="fa-solid fa-plus mas2"></i>
+                <i class="fa-solid fa-minus menos2"></i>
+              </div>
+              <h2>¿En cuanto tiempo realizan entregas?</h2>
+            </div>
+            <p class="acordeon_contenido contenido2">
+              Son 14 días posteriores a la firma del contrato de venta para
+              realizar la entrega, en casos de urgencia se puede cotizar con
+              entrega inmediata.
+            </p>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon_titulo titulo3">
+              <div class="iconos">
+                <i class="fa-solid fa-plus mas3"></i>
+                <i class="fa-solid fa-minus menos3"></i>
+              </div>
+              <h2>¿Como solicito atención a cliente?</h2>
+            </div>
+            <p class="acordeon_contenido contenido3">
+              Puede ponerse en contacto con nuestros asesores mediante el boton
+              de Whatsapp de la página, o enviandonos un correo a la dirección
+              que aparece al final de ella.
+            </p>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon_titulo titulo4">
+              <div class="iconos">
+                <i class="fa-solid fa-plus mas4"></i>
+                <i class="fa-solid fa-minus menos4"></i>
+              </div>
+              <h2>¿Tienen redes sociales?</h2>
+            </div>
+            <p class="acordeon_contenido contenido4">
+              ¡Claro! Contamos con cuentas oficiales y verificadas en Facebook,
+              Twitter e Instagram, le invitamos a seguirnos en todas ellas para
+              no perderse de eventos y promociones.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="des">
+        <figure>
+          <img src="assets/imagenes/pngwing.com.png" alt="" />
+        </figure>
+      </article>
+    </section>
+
+    <footer>
+      <figure>
+        <img src="assets/imagenes/logo.svg" alt="" />
+      </figure>
+      <a href="/sobrenosotros.html"> Acerca de nosotros </a>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/"> <i class="fa-brands fa-square-facebook"></i> </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/"> <i class="fa-brands fa-square-twitter"></i> </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/"> <i class="fa-brands fa-square-instagram"></i> </a>
+        </li>
+      </ul>
+      <h3>
+        Contacto:<br />
+        LE18081099@merida.tecnm.mx
+      </h3>
+      <p>Create and design by: Ángel Matos</p>
+    </footer>
+
+
+    <div id="sube" class="btnRegresar">
+      <i class="fa-solid fa-square-caret-up"></i>
+      <h1></h1>
+    </div>
+
+   
+
+    <div id="modal" class="fondoformulario">
+      <a id="cerrar" href="#">
+        <i class="fa-sharp fa-solid fa-rectangle-xmark"></i>
+      </a>
+      <section class="contenidomodal">
+        <div class="formulario">
+          <h1>CONTACTANOS</h1>
+          <br />
+          <p>
+            Escribenos para descrbir tus necesidades, nos pondremos en contacto
+            contigo para agendar una cita de negocios.
+          </p>
+          <br />
+          <form action="">
+            <input
+              type="name"
+              name="Nombre"
+              class="nombre"
+              id="user-email"
+              placeholder="Empresa *"
+              required
+            />
+            <br /><br />
+            <input
+              type="email"
+              name="Email"
+              class="email"
+              id="user-email"
+              placeholder="Correo *"
+              required
+            />
+            <br /><br />
+            <textarea
+              class="mensaje"
+              name="message"
+              cols="40"
+              rows="6"
+              placeholder="Describe tu caso *"
+              required
+              minlength="80"
+            ></textarea>
+            <br /><br />
+            <input class="boton" type="submit" value="Enviar" />
+          </form>
+        </div>
+        <figure>
+          <img src="assets/imagenes/logo.svg" alt="" />
+        </figure>
+      </section>
+    </div>
+
+    <script src="funciones.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#slider1").tinycarousel();
+      });
+    </script>
+    <script>
+      //ACORDEON
+
+      $(".titulo1").click(function () {
+        $(".contenido1").slideToggle();
+        $(".mas1").toggleClass("desaparecer");
+      });
+
+      $(".titulo2").click(function () {
+        $(".contenido2").slideToggle();
+        $(".mas2").toggleClass("desaparecer");
+      });
+
+      $(".titulo3").click(function () {
+        $(".contenido3").slideToggle();
+        $(".mas3").toggleClass("desaparecer");
+      });
+
+      $(".titulo4").click(function () {
+        $(".contenido4").slideToggle();
+        $(".mas4").toggleClass("desaparecer");
+      });
+    </script>
+    <script>
+      var fondomodal = document.getElementById("modal");
+      var btn = document.getElementById("form");
+      var cerrar = document.getElementById("cerrar");
+
+      function tiempo() {
+        fondomodal.style.display = "block";
+      }
+      setTimeout(tiempo, 200000000);
+
+      btn.onclick = function () {
+        fondomodal.style.display = "block";
+      };
+      cerrar.onclick = function () {
+        fondomodal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == fondomodal) {
+          fondomodal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#slider1").tinycarousel();
+    });
+  </script>
+</html>
